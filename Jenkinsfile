@@ -54,7 +54,7 @@ pipeline {
              script {
                 docker.image('citools-isis2603:latest').inside('-u root') {
                    sh '''
-                      npm test --coverage
+                      npm test --watchAll=false --coverage
                    '''
                 }
              }
