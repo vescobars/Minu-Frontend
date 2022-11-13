@@ -1,14 +1,25 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import * as serviceWorkerRegistration from './serviceWorkerRegistration';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
+import reportWebVitals from "./reportWebVitals";
+import Register from "./components/Register";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Restaurants from "./components/Restaurants";
+import Products from "./components/Products";
+import CreatePromotion from "./components/CreatePromotion";
+import Header from "./components/Header";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    {/* <App /> */}
+    <Header />
+    {/* <Register />
+    <Restaurants />
+    <Products />
+    <CreatePromotion /> */}
   </React.StrictMode>
 );
 
