@@ -1,0 +1,75 @@
+@import url('https://fonts.cdnfonts.com/css/kulim-park');
+
+
+*{
+    font-family: 'Kulim Park';
+    text-align: center;
+}
+
+fieldset{
+    align-self: center;
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+}
+
+label{
+    font-size: 100%;
+}
+
+form{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#descripcion{
+    width: 70%;
+}
+
+#rname{
+    width: 70%;
+}
+
+#cname{
+    font-size: 100%;
+    width: 70%;
+}
+
+#cadena{
+    font-size: 150%;
+}
+
+#direccion{
+    width: 15%;
+}
+
+#add{
+    background-color: #6A1818;
+    color:white;
+    padding: 8px 25px;
+    border-radius: 4px;
+
+}
+
+#title{
+    text-align: center;
+    background-color: #FFDD86;
+}
+
+#title h1{
+    font-size: 300%;
+}
+
+#title p{
+    font-size: 120%;
+    color: #6A1818;
+}
+
+#Apertura{
+    width: 25%;
+}
+
+#Cierre{
+    width: 25%;
+}
+

@@ -10,6 +10,9 @@ import Restaurants from "./components/Restaurants";
 import Products from "./components/Products";
 import CreatePromotion from "./components/CreatePromotion";
 import Header from "./components/Header";
+import NuevoRestaurante from "./components/NuevoRestaurante";
+import Reporte from "./components/Reporte";
+import NuevaCadena from "./components/NuevaCadena";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -19,7 +22,10 @@ root.render(
     {/* <Register />
     <Restaurants />
     <Products />
-    <CreatePromotion /> */}
+    <CreatePromotion />
+    <NuevoRestaurante />
+    <Reporte />
+    <NuevaCadena /> */}
   </React.StrictMode>
 );
 
