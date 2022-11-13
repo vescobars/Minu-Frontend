@@ -1,0 +1,114 @@
+@import url('https://fonts.cdnfonts.com/css/kulim-park');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+*{
+    font-family: 'Kulim Park';
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    margin: 0;
+}
+  
+.grid-item {
+    font-size: 120%;
+    text-align: center;
+}
+
+#title{
+    text-align: center;
+    background-color: #FFDD86;
+}
+
+#title h1{
+    font-size: 300%;
+    margin-bottom: 0;
+}
+
+#title p{
+    font-size: 120%;
+    color: #6A1818;
+    margin-top: 0;
+}
+
+#filtro{
+    width: 100px;
+    margin-left: 10px;
+}
+
+#descargar{
+    background-color: #6A1818;
+    color:white;
+    padding: 5px 50px;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+.completada{
+    color:rgb(91, 141, 17);
+}
+
+.pendiente{
+    color:rgb(141, 5, 5);
+}
+
+a{
+    color:#6A1818;
+}
+
+.card{
+    height: 120px;
+    float: left;
+    border-style: groove;
+    border-radius: 8px;
+    margin-left: 8px;
+    width: 150px;
+}
+
+.rcard{
+    height: 180px;
+    float: left;
+    border-style: groove;
+    border-radius: 8px;
+    margin-left: 8px;
+}
+
+.rcard p{
+    width: 300px;
+}
+
+.rcard h3{
+    margin: 0;
+    margin-top: 8px;
+}
+
+.xscroll{
+    height: 140px;
+    overflow-x: auto;
+}
+
+.rxscroll{
+    height: 200px;
+    overflow-x: auto;
+}
+
+.orders{
+    width:max-content;
+}
+
+.reviews{
+    width:max-content;
+}
+
+.checked {
+    color: orange;
+}
+
+button{
+    background-color: #6A1818;
+    color:white;
+    padding: 2px 10px;
+    border-radius: 4px;
+}
