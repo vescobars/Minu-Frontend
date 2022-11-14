@@ -13,6 +13,8 @@ import Header from "./components/Header";
 import NuevoRestaurante from "./components/NuevoRestaurante";
 import Reporte from "./components/Reporte";
 import NuevaCadena from "./components/NuevaCadena";
+import AddReviewRestaurant from "./components/AddReviewRestaurant";
+import AddPlate from "./components/AddPlate";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -25,7 +27,9 @@ root.render(
     <CreatePromotion />
     <NuevoRestaurante />
     <Reporte />
-    <NuevaCadena /> */}
+    <NuevaCadena /> 
+    <AddReviewRestaurant /> 
+    <AddPlate /> */}
   </React.StrictMode>
 );
 
@@ -37,4 +41,4 @@ serviceWorkerRegistration.unregister();
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+reportWebVitals( );
