@@ -6,6 +6,9 @@ import Restaurants from "./components/Restaurants";
 import Products from "./components/Products";
 import CreatePromotion from "./components/CreatePromotion";
 import Register from "./components/Register";
+import CreateRestaurant from "./components/CreateRestaurant";
+import CreateChain from "./components/CreateChain";
+import Report from "./components/Report";
 
 function App() {
   return (
@@ -18,6 +21,9 @@ function App() {
           <Route path="/products" element={<Products />} />
           <Route path="/create-promotion" element={<CreatePromotion />} />
           <Route path="/" element={<Restaurants />} />
+          <Route path="/create-restaurant" element={<CreateRestaurant />} />
+          <Route path="/create-chain" element={<CreateChain />} />
+          <Route path="/report" element={<Report />} />
         </Routes>
       </BrowserRouter>
     </div>
