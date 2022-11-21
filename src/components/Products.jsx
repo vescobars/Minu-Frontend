@@ -1,44 +1,55 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import ProductCard from "./ProductCard";
 
-const prodValues = [
-  {
-    name: "Product",
-    review: 5,
-    image:
-      "https://cdn.vox-cdn.com/thumbor/OheW0CNYdNihux9eVpJ958_bVCE=/0x0:5996x4003/1200x900/filters:focal(1003x1633:1961x2591)/cdn.vox-cdn.com/uploads/chorus_image/image/51830567/2021_03_23_Merois_008.30.jpg",
-  },
-  {
-    name: "Product",
-    review: 5,
-    image:
-      "https://cdn.vox-cdn.com/thumbor/OheW0CNYdNihux9eVpJ958_bVCE=/0x0:5996x4003/1200x900/filters:focal(1003x1633:1961x2591)/cdn.vox-cdn.com/uploads/chorus_image/image/51830567/2021_03_23_Merois_008.30.jpg",
-  },
-  {
-    name: "Product",
-    review: 5,
-    image:
-      "https://cdn.vox-cdn.com/thumbor/OheW0CNYdNihux9eVpJ958_bVCE=/0x0:5996x4003/1200x900/filters:focal(1003x1633:1961x2591)/cdn.vox-cdn.com/uploads/chorus_image/image/51830567/2021_03_23_Merois_008.30.jpg",
-  },
-  {
-    name: "Product",
-    review: 5,
-    image:
-      "https://cdn.vox-cdn.com/thumbor/OheW0CNYdNihux9eVpJ958_bVCE=/0x0:5996x4003/1200x900/filters:focal(1003x1633:1961x2591)/cdn.vox-cdn.com/uploads/chorus_image/image/51830567/2021_03_23_Merois_008.30.jpg",
-  },
-  {
-    name: "Product",
-    review: 5,
-    image:
-      "https://cdn.vox-cdn.com/thumbor/OheW0CNYdNihux9eVpJ958_bVCE=/0x0:5996x4003/1200x900/filters:focal(1003x1633:1961x2591)/cdn.vox-cdn.com/uploads/chorus_image/image/51830567/2021_03_23_Merois_008.30.jpg",
-  },
-];
+// const prodValues = [
+//   {
+//     name: "Product",
+//     review: 5,
+//     image:
+//       "https://cdn.vox-cdn.com/thumbor/OheW0CNYdNihux9eVpJ958_bVCE=/0x0:5996x4003/1200x900/filters:focal(1003x1633:1961x2591)/cdn.vox-cdn.com/uploads/chorus_image/image/51830567/2021_03_23_Merois_008.30.jpg",
+//   },
+//   {
+//     name: "Product",
+//     review: 5,
+//     image:
+//       "https://cdn.vox-cdn.com/thumbor/OheW0CNYdNihux9eVpJ958_bVCE=/0x0:5996x4003/1200x900/filters:focal(1003x1633:1961x2591)/cdn.vox-cdn.com/uploads/chorus_image/image/51830567/2021_03_23_Merois_008.30.jpg",
+//   },
+//   {
+//     name: "Product",
+//     review: 5,
+//     image:
+//       "https://cdn.vox-cdn.com/thumbor/OheW0CNYdNihux9eVpJ958_bVCE=/0x0:5996x4003/1200x900/filters:focal(1003x1633:1961x2591)/cdn.vox-cdn.com/uploads/chorus_image/image/51830567/2021_03_23_Merois_008.30.jpg",
+//   },
+//   {
+//     name: "Product",
+//     review: 5,
+//     image:
+//       "https://cdn.vox-cdn.com/thumbor/OheW0CNYdNihux9eVpJ958_bVCE=/0x0:5996x4003/1200x900/filters:focal(1003x1633:1961x2591)/cdn.vox-cdn.com/uploads/chorus_image/image/51830567/2021_03_23_Merois_008.30.jpg",
+//   },
+//   {
+//     name: "Product",
+//     review: 5,
+//     image:
+//       "https://cdn.vox-cdn.com/thumbor/OheW0CNYdNihux9eVpJ958_bVCE=/0x0:5996x4003/1200x900/filters:focal(1003x1633:1961x2591)/cdn.vox-cdn.com/uploads/chorus_image/image/51830567/2021_03_23_Merois_008.30.jpg",
+//   },
+// ];
 
 const Products = () => {
   const [data, setData] = useState({
     name: "",
   });
+
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    const URL = "https://localhost:3000/products";
+    fetch(URL)
+      .then((data) => data.json())
+      .then((data) => {
+        setProducts(data);
+      });
+  }, []);
 
   const handleChange = (e) => {
     setData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
@@ -77,14 +88,14 @@ const Products = () => {
         </h3>
         <div className="container w-100 mt-4">
           <div className="row">
-            {prodValues.map((res) => (
+            {products.map((res) => (
               <div className="col col-sm-4">
                 <ProductCard product={res} />
               </div>
             ))}
           </div>
         </div>
-        <div className="d-flex">
+        {/* <div className="d-flex">
           <div
             className="bg-warning text-white rounded-circle d-flex justify-content-center align-items-center mx-1"
             style={{ height: "25px", width: "25px" }}
@@ -103,7 +114,7 @@ const Products = () => {
           >
             3
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
