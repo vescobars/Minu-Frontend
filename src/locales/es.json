@@ -1,0 +1,22 @@
+{
+  "CreateDiscount": "Crear promoción",
+  "CreateProduct": "Crear producto",
+  "Product": "Producto",
+  "Products": "Productos",
+  "Type": "Tipo",
+  "DiscountValue": "Valor descuento",
+  "ActivationDate": "Fecha activación",
+  "Create": "Crear",
+  "Restaurants": "Restaurantes",
+  "Discounts": "Descuentos",
+  "AboutUs": "Nosotros",
+  "LogIn": "Ingresar",
+  "SignUp": "Registrarse",
+  "RegisterUser": "Registrar usuario",
+  "Email": "Correo",
+  "Name": "Nombre",
+  "Phone": "Telefono",
+  "City": "Ciudad",
+  "Password": "Contraseña",
+  "YourRestaurants": "Tus restaurantes"
+}

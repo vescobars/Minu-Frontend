@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { FormattedMessage } from "react-intl";
 import BackgroundDots from "./BackgroundDots";
 
 const Register = () => {
@@ -33,7 +34,7 @@ const Register = () => {
           MinU
         </h2>
         <h3 className="m-0 mt-4" style={{ fontSize: "20px" }}>
-          Registrar usuario
+          <FormattedMessage id="RegisterUser" />
         </h3>
       </div>
       <div className="w-100 d-flex flex-column justify-content-center align-items-center py-5 position-relative">
@@ -41,7 +42,7 @@ const Register = () => {
         <BackgroundDots className="bottom-0 start-0" />
         <div className="w-50">
           <label htmlFor="" className="font-weight-bold">
-            Correo
+            <FormattedMessage id="RegisterUser" />
           </label>
           <input
             onChange={handleChange}
@@ -53,7 +54,7 @@ const Register = () => {
         </div>
         <div className="w-50 mt-3">
           <label htmlFor="" className="font-weight-bold">
-            Nombre
+            <FormattedMessage id="Name" />
           </label>
           <input
             onChange={handleChange}
@@ -65,7 +66,7 @@ const Register = () => {
         </div>
         <div className="w-50 mt-3">
           <label htmlFor="" className="font-weight-bold">
-            Telefono
+            <FormattedMessage id="Phone" />
           </label>
           <input
             onChange={handleChange}
@@ -77,7 +78,7 @@ const Register = () => {
         </div>
         <div className="w-50 mt-3">
           <label htmlFor="" className="font-weight-bold">
-            Ciudad
+            <FormattedMessage id="City" />
           </label>
           <input
             onChange={handleChange}
@@ -89,7 +90,7 @@ const Register = () => {
         </div>
         <div className="w-50 mt-3">
           <label htmlFor="" className="font-weight-bold">
-            Contraseña
+            <FormattedMessage id="Password" />
           </label>
           <input
             onChange={handleChange}
@@ -100,7 +101,7 @@ const Register = () => {
           />
         </div>
         <button className="mt-5 border-0 rounded py-2 px-3 text-white bg-warning">
-          Registrar
+          <FormattedMessage id="SignUp" />
         </button>
       </div>
     </div>
