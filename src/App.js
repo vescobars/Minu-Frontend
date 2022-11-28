@@ -10,6 +10,9 @@ import Register from "./components/Register";
 import CreateRestaurant from "./components/CreateRestaurant";
 import CreateChain from "./components/CreateChain";
 import Report from "./components/Report";
+import QrCodeReader from "./components/QrReader";
+import Orders from "./components/Orders";
+import ShoppingCart from "./components/ShoppingCart";
 
 function App() {
   return (
@@ -27,6 +30,7 @@ function App() {
           <Route path="/report" element={<Report />} />
           <Route path="/shopping-cart" element={<ShoppingCart/>}/>
           <Route path="/view-orders" element={<Orders/>}/>
+          <Route path="/qr-reader" element={<QrCodeReader/>}/>
         </Routes>
       </BrowserRouter>
     </div>

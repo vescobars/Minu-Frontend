@@ -16,6 +16,7 @@ const Header = () => {
       </div>
       <div className="d-flex justify-content-between align-items-center">
         <div className="justify-content-between align-items-center me-5 d-lg-flex d-none">
+          
           <Link to={"/restaurants"}>
             <span className="h5 my-0 text-black text-decoration-none">
               <FormattedMessage id="Restaurants" />
@@ -29,6 +30,11 @@ const Header = () => {
           <Link to={"/register"}>
             <span className="h5 my-0 text-black text-decoration-none">
               <FormattedMessage id="AboutUs" />
+            </span>
+          </Link>
+          <Link to={"/qr-reader"}>
+            <span className="mx-5 h5 my-0 text-black text-decoration-none">
+              <FormattedMessage id="Scan Menu"/>
             </span>
           </Link>
         </div>
