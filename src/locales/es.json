@@ -45,6 +45,9 @@
   "Until": "Hasta",
   "Apply": "Aplicar",
   "DownloadReport": "Descargar reporte",
-  "OrdersTotal": "Ordenes en total:",
-  "TotalPrice": "Valor total:"
+  "OrdersTotal": "Ordenes en total",
+  "TotalPrice": "Valor total",
+  "Image": "Imagen",
+  "Add": "Añadir",
+  "Opinion": "¿Qué tal te pareció el restaurante?"
 }
