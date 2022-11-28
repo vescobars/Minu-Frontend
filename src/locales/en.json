@@ -47,6 +47,9 @@
   "DownloadReport": "Download report",
   "OrdersTotal": "Orders in total:",
   "TotalPrice": "Total price:",
+  "Image": "Image",
+  "Add": "Add",
+  "Review": "Let us know what you think"
   "Schedule": "Schedule",
   "CreateRestaurant": "Create a restaurant",
   "QRMenuScanner" : "QR Menu Scanner"
