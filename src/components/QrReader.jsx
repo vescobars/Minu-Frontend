@@ -24,11 +24,14 @@ const QrCodeReader = () =>{
                     <span className="h2 my-0 text-black text-decoration-none">
                         QR Menu Scanner
                     </span>
-                    <QrReader style={{marginTop:'10'}}>
+                    <QrReader style={{
+                        margin: '0',
+                        position: 'absolute',
+                    }}>
                         delay={300}
                         onError={handleError}
                         onScan={handleScan}
-                        style={{ height: '250', width:'320' }}
+                        style={{ width: '50%' }}
                     </QrReader>
                 </div>
             </center>
