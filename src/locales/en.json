@@ -48,5 +48,6 @@
   "OrdersTotal": "Orders in total:",
   "TotalPrice": "Total price:",
   "Schedule": "Schedule",
-  "CreateRestaurant": "Create a restaurant"
+  "CreateRestaurant": "Create a restaurant",
+  "QRMenuScanner" : "QR Menu Scanner"
 }

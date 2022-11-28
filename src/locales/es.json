@@ -48,5 +48,6 @@
   "OrdersTotal": "Ordenes en total:",
   "TotalPrice": "Valor total:",
   "Schedule": "Horario",
-  "CreateRestaurant": "Crea un restaurante"
+  "CreateRestaurant": "Crea un restaurante",
+  "QRMenuScanner" : "Scanner de Menu QR"
 }
