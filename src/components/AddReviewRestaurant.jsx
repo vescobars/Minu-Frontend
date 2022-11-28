@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import ReactDOM from "react-dom/client";
+import { FormattedMessage } from "react-intl";
 
 function AddReviewRestaurant() {
   const [data, setData] = useState({
@@ -17,7 +18,7 @@ function AddReviewRestaurant() {
       <form>
         <div class="form-group row">
           <label for="inputDescription" class="col-sm-2 col-form-label">
-            ¿Qué tal te parece el restaurante?
+          <FormattedMessage id="Opinion" />
           </label>
           <div class="col-sm-10">
             <input
@@ -43,7 +44,7 @@ function AddReviewRestaurant() {
     </script>
     */}
       <button type="button" class="btn btn-danger">
-        Danger
+      <FormattedMessage id="Add" />
       </button>
     </>
   );

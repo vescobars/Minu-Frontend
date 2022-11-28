@@ -9,6 +9,8 @@ import Register from "./components/Register";
 import CreateRestaurant from "./components/CreateRestaurant";
 import CreateChain from "./components/CreateChain";
 import Report from "./components/Report";
+import AddReviewRestaurant from "./components/AddReviewRestaurant";
+import AddPlate from "./components/AddPlate";
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
           <Route path="/create-restaurant" element={<CreateRestaurant />} />
           <Route path="/create-chain" element={<CreateChain />} />
           <Route path="/report" element={<Report />} />
+          <Route path="/addReviewRestaurant" element={<AddReviewRestaurant />} />
+          <Route path="/addPlate" element={<AddPlate />} />
         </Routes>
       </BrowserRouter>
     </div>
