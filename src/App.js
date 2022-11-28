@@ -25,6 +25,8 @@ function App() {
           <Route path="/create-restaurant" element={<CreateRestaurant />} />
           <Route path="/create-chain" element={<CreateChain />} />
           <Route path="/report" element={<Report />} />
+          <Route path="/shopping-cart" element={<ShoppingCart/>}/>
+          <Route path="/view-orders" element={<Orders/>}/>
         </Routes>
       </BrowserRouter>
     </div>
