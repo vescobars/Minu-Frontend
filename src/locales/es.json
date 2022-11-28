@@ -45,9 +45,17 @@
   "Until": "Hasta",
   "Apply": "Aplicar",
   "DownloadReport": "Descargar reporte",
+
   "OrdersTotal": "Ordenes en total",
   "TotalPrice": "Valor total",
   "Image": "Imagen",
   "Add": "Añadir",
   "Opinion": "¿Qué tal te pareció el restaurante?"
+
+  "OrdersTotal": "Ordenes en total:",
+  "TotalPrice": "Valor total:",
+  "Schedule": "Horario",
+  "CreateRestaurant": "Crea un restaurante",
+  "QRMenuScanner" : "Scanner de Menu QR"
+
 }
