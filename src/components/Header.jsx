@@ -1,4 +1,5 @@
 import React from "react";
+import { FormattedMessage } from "react-intl";
 import { Link } from "react-router-dom";
 
 const Header = () => {
@@ -17,17 +18,17 @@ const Header = () => {
         <div className="justify-content-between align-items-center me-5 d-lg-flex d-none">
           <Link to={"/restaurants"}>
             <span className="h5 my-0 text-black text-decoration-none">
-              Restaurantes
+              <FormattedMessage id="Restaurants" />
             </span>
           </Link>
           <Link to={"/register"}>
             <span className="mx-5 h5 my-0 text-black text-decoration-none">
-              Promociones
+              <FormattedMessage id="Discounts" />
             </span>
           </Link>
           <Link to={"/register"}>
             <span className="h5 my-0 text-black text-decoration-none">
-              Nosotros
+              <FormattedMessage id="AboutUs" />
             </span>
           </Link>
         </div>
@@ -40,7 +41,7 @@ const Header = () => {
               fontWeight: "bold",
             }}
           >
-            Log In
+            <FormattedMessage id="LogIn" />
           </button>
           <Link to={"/register"}>
             <button
@@ -52,7 +53,7 @@ const Header = () => {
                 backgroundColor: "#FF9C65",
               }}
             >
-              Sign Up
+              <FormattedMessage id="SignUp" />
             </button>
           </Link>
         </div>

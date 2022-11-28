@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
+import { FormattedMessage } from "react-intl";
 import ProductCard from "./ProductCard";
 
 // const prodValues = [
@@ -84,7 +85,7 @@ const Products = () => {
       </div>
       <div className="w-100 d-flex flex-column justify-content-center align-items-center py-4 position-relative">
         <h3 className="font-weight-bold" style={{ fontSize: "40px" }}>
-          Productos:
+          <FormattedMessage id="Products" />:
         </h3>
         <div className="container w-100 mt-4">
           <div className="row">

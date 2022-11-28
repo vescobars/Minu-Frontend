@@ -2,6 +2,8 @@ import React from "react";
 import OrderCard from "./OrderCard";
 import ReviewCard from "./ReviewCard";
 
+import { FormattedMessage } from "react-intl";
+
 function Report() {
   return (
     <>
@@ -21,11 +23,13 @@ function Report() {
             MinU
           </h2>
           <h3 className="m-0 mt-4" style={{ fontSize: "20px" }}>
-            Reporte Restaurante #1
+            <FormattedMessage id="Report"/>
           </h3>
         </div>
       <div id="Ordenes">
-        <h2>Ordenes</h2>
+        <h2>
+          <FormattedMessage id="Orders"/>
+        </h2>
         <div 
           style={{
             display: "grid",
@@ -34,13 +38,21 @@ function Report() {
             fontSize:"110%",
             textAlign: "center",
           }}>
-          <div >TOTAL ORDENES: 10</div>
-          <div >VALOR TOTAL: $99'999.999</div>
           <div >
-            <input style={{width:"100px"}} placeholder="Desde"></input>
-            <input style={{width:"100px"}} placeholder="Hasta"></input>
+            <FormattedMessage id="OrdersTotal"/> 10
+          </div>
+          <div >
+            <FormattedMessage id="TotalPrice"/>$99'999.999
+          </div>
+          <div >
+            <FormattedMessage id="Since">{placeholder=>  
+              <input style={{width:"100px"}} placeholder={placeholder}/>}
+            </FormattedMessage>
+            <FormattedMessage id="Until">{placeholder=>  
+              <input style={{width:"100px"}} placeholder={placeholder}/>}
+            </FormattedMessage>
             <button className="border-0 rounded py-1 px-2 text-white" style={{background: "#6A1818"}}>
-              Aplicar
+              <FormattedMessage id="Apply"/>
             </button>
           </div>
         </div>
@@ -52,23 +64,25 @@ function Report() {
             overflowX: "auto",
           }}>
           <div style={{ width:"max-content"}}>
-            <OrderCard id="#1" state="COMPLETADA" date="20/11/2022"/>
-            <OrderCard id="#2" state="COMPLETADA" date="20/11/2022"/>
-            <OrderCard id="#3" state="COMPLETADA" date="20/11/2022"/>
-            <OrderCard id="#4" state="COMPLETADA" date="20/11/2022"/>
-            <OrderCard id="#5" state="COMPLETADA" date="20/11/2022"/>
-            <OrderCard id="#6" state="COMPLETADA" date="20/11/2022"/>
-            <OrderCard id="#7" state="COMPLETADA" date="20/11/2022"/>
-            <OrderCard id="#8" state="COMPLETADA" date="20/11/2022"/>
-            <OrderCard id="#9" state="COMPLETADA" date="20/11/2022"/>
-            <OrderCard id="#10" state="COMPLETADA" date="20/11/2022"/>
-            <OrderCard id="#11" state="COMPLETADA" date="20/11/2022"/>
+            <OrderCard id="#1" state="Done" date="2019-03-26"/>
+            <OrderCard id="#2" state="Done" date="2019-03-26"/>
+            <OrderCard id="#3" state="Done" date="2019-03-26"/>
+            <OrderCard id="#4" state="Done" date="2019-03-26"/>
+            <OrderCard id="#5" state="Done" date="2019-03-26"/>
+            <OrderCard id="#6" state="Done" date="2019-03-26"/>
+            <OrderCard id="#7" state="Done" date="2019-03-26"/>
+            <OrderCard id="#8" state="Done" date="2019-03-26"/>
+            <OrderCard id="#9" state="Done" date="2019-03-26"/>
+            <OrderCard id="#10" state="Done" date="2019-03-26"/>
+            <OrderCard id="#11" state="Done" date="2019-03-26"/>
           </div>
         </div>
       </div>
 
       <div id="Reviews">
-        <h2>Reviews</h2>
+        <h2>
+          <FormattedMessage id="Reviews"/>
+        </h2>
         <div 
           style={{
             height: "220px",
@@ -103,7 +117,7 @@ function Report() {
         </div>
 
         <button className="mt-2 md-2 border-0 rounded py-2 px-3 text-white" style={{background: "#6A1818"}}>
-          Descargar reporte
+          <FormattedMessage id="DownloadReport"/>
         </button>
       </div>
     </>
