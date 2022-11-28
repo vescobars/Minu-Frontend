@@ -46,5 +46,7 @@
   "Apply": "Apply",
   "DownloadReport": "Download report",
   "OrdersTotal": "Orders in total:",
-  "TotalPrice": "Total price:"
+  "TotalPrice": "Total price:",
+  "Schedule": "Schedule",
+  "CreateRestaurant": "Create a restaurant"
 }
