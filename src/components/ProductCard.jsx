@@ -1,5 +1,6 @@
 import { Rating } from "@mui/material";
 import React from "react";
+import { FormattedMessage } from "react-intl";
 
 const ProductCard = ({ product }) => {
   return (
@@ -11,7 +12,7 @@ const ProductCard = ({ product }) => {
         className="mt-3 border-0 rounded py-2 px-3 text-white bg-warning"
         style={{ width: "max-content" }}
       >
-        Crear promoción
+        <FormattedMessage id="CreateProduct" />
       </button>
     </div>
   );
