@@ -1,10 +1,31 @@
 import React from "react";
 import OrderCard from "./OrderCard";
 import ReviewCard from "./ReviewCard";
+import { useEffect, useState } from "react";
 
 import { FormattedMessage } from "react-intl";
 
+import ReportDetail from "./ReportDetail";
+
 function Report() {
+  const [restaurants, setRestaurants] = useState([]);
+  const [selectedRest, setSelectedRest] = useState([]);
+
+  useEffect(() => {
+    console.log("here")
+    const URL = "/api/v1/sites";
+    fetch(URL)
+      .then((data) => data.json())
+      .then((data) => {
+        setRestaurants(data);
+      });
+  }, [selectedRest]);
+
+  const selectDetail = (restaurant) => {
+    console.log(restaurant)
+    setSelectedRest(restaurant)
+  }
+
   return (
     <>
       <div
@@ -26,6 +47,23 @@ function Report() {
             <FormattedMessage id="Report"/>
           </h3>
         </div>
+      <div>
+        <h2>
+          <FormattedMessage id="SelectRestaurant"/>
+        </h2>
+        {/* <select id="restaurantReport">
+          {restaurants.map(res => (
+              <option value={res.id}>{res.description}</option>
+            ))}
+        </select> */}
+        <ol>
+          {restaurants.map(res => (
+              <li onClick={selectDetail.bind(this, res)}>{res.description}</li>
+            ))}
+        </ol>
+      </div>
+      <hr></hr>
+
       <div id="Ordenes">
         <h2>
           <FormattedMessage id="Orders"/>
@@ -60,11 +98,15 @@ function Report() {
 
         <div 
           style={{
-            height: "140px",
+            height: "160px",
             overflowX: "auto",
           }}>
           <div style={{ width:"max-content"}}>
-            <OrderCard id="#1" state="Done" date="2019-03-26"/>
+            <ReportDetail Restaurant={selectedRest} />
+            {/* {orders?.map((order, i) => (
+              <OrderCard id={i} state={order.state} date={order.date} totalValue={order.totalValue}/>
+            ))} */}
+            {/* <OrderCard id="#1" state="Done" date="2019-03-26"/>
             <OrderCard id="#2" state="Done" date="2019-03-26"/>
             <OrderCard id="#3" state="Done" date="2019-03-26"/>
             <OrderCard id="#4" state="Done" date="2019-03-26"/>
@@ -74,7 +116,7 @@ function Report() {
             <OrderCard id="#8" state="Done" date="2019-03-26"/>
             <OrderCard id="#9" state="Done" date="2019-03-26"/>
             <OrderCard id="#10" state="Done" date="2019-03-26"/>
-            <OrderCard id="#11" state="Done" date="2019-03-26"/>
+            <OrderCard id="#11" state="Done" date="2019-03-26"/> */}
           </div>
         </div>
       </div>
@@ -85,7 +127,7 @@ function Report() {
         </h2>
         <div 
           style={{
-            height: "220px",
+            height: "240px",
             overflowX: "auto",
           }}>
           <div style={{ width:"max-content"}}>
