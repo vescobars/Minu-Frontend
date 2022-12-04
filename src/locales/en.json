@@ -53,5 +53,8 @@
   "Schedule": "Schedule",
   "CreateRestaurant": "Create a restaurant",
   "QRMenuScanner" : "QR Menu Scanner",
-  "SelectRestaurant" : "Select restaurant"
+  "SelectRestaurant" : "Select restaurant",
+  "addChain": "New Chain",
+  "addRestaurant": "New Restaurant",
+  "report": "Reports"
 }

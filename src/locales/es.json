@@ -53,6 +53,8 @@
   "Schedule": "Horario",
   "CreateRestaurant": "Crea un restaurante",
   "QRMenuScanner" : "Scanner de Menu QR",
-  "SelectRestaurant" : "Seleccionar restaurante"
-
+  "SelectRestaurant" : "Seleccionar restaurante",
+  "addChain": "Nueva Cadena",
+  "addRestaurant": "Nuevo Restaurante",
+  "report": "Reportes"
 }
