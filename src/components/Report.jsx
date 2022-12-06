@@ -5,14 +5,13 @@ import { useEffect, useState } from "react";
 import { FormattedMessage } from "react-intl";
 
 import ReportDetail from "./ReportDetail";
-import { Row, Col } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 
 function Report() {
   const [restaurants, setRestaurants] = useState([]);
   const [selectedRest, setSelectedRest] = useState([]);
 
   useEffect(() => {
-    console.log(restaurants)
     if(!navigator.onLine){
       if(localStorage.getItem("restaurants") === null){
         setRestaurants([])
@@ -28,7 +27,7 @@ function Report() {
     }
   }, [selectedRest]);
 
-  if (restaurants.length == 0){
+  if (restaurants.length === 0){
     return null
   }
 
@@ -61,15 +60,10 @@ function Report() {
         <h2>
           <FormattedMessage id="SelectRestaurant"/>
         </h2>
-        {/* <select id="restaurantReport">
-          {restaurants.map(res => (
-              <option value={res.id}>{res.description}</option>
-            ))}
-        </select> */}
         <div style={{overflowX: "auto"}}>
           <Row>
           {restaurants?.map(res => (
-              <Card style={{cursor: "pointer", width:"auto"}} onClick={selectDetail.bind(this, res)}>
+              <Card key={res.id} style={{cursor: "pointer", width:"auto"}} onClick={selectDetail.bind(this, res)}>
                 <Card.Body>
                   <Card.Title >{res.description}</Card.Title>
                 </Card.Body>

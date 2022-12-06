@@ -58,5 +58,7 @@
   "addRestaurant": "Nuevo Restaurante",
   "report": "Reportes",
   "ReadMore": "Leer más",
-  "TryNow": "Prueba ahora"
+  "TryNow": "Prueba ahora",
+  "Scan Menu": "Escanear Menú",
+  "QR Menu Scanner": "Escaner de Menú QR"
 }
