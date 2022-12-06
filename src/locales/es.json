@@ -52,9 +52,11 @@
   "TotalPrice": "Valor total:",
   "Schedule": "Horario",
   "CreateRestaurant": "Crea un restaurante",
-  "QRMenuScanner" : "Scanner de Menu QR",
-  "SelectRestaurant" : "Seleccionar restaurante",
+  "QRMenuScanner": "Scanner de Menu QR",
+  "SelectRestaurant": "Seleccionar restaurante",
   "addChain": "Nueva Cadena",
   "addRestaurant": "Nuevo Restaurante",
-  "report": "Reportes"
+  "report": "Reportes",
+  "ReadMore": "Leer más",
+  "TryNow": "Prueba ahora"
 }

@@ -14,6 +14,7 @@ import AddPlate from "./components/AddPlate";
 import QrCodeReader from "./components/QrReader";
 import Orders from "./components/Orders";
 import ShoppingCart from "./components/ShoppingCart";
+import Home from "./components/Home";
 
 function App() {
   return (
@@ -25,18 +26,18 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/products" element={<Products />} />
           <Route path="/create-promotion" element={<CreatePromotion />} />
-          <Route path="/" element={<Restaurants />} />
           <Route path="/create-restaurant" element={<CreateRestaurant />} />
           <Route path="/create-chain" element={<CreateChain />} />
           <Route path="/report" element={<Report />} />
-
-          <Route path="/addReviewRestaurant" element={<AddReviewRestaurant />} />
+          <Route
+            path="/addReviewRestaurant"
+            element={<AddReviewRestaurant />}
+          />
           <Route path="/addPlate" element={<AddPlate />} />
-
-          <Route path="/shopping-cart" element={<ShoppingCart/>}/>
-          <Route path="/view-orders" element={<Orders/>}/>
-          <Route path="/qr-reader" element={<QrCodeReader/>}/>
-
+          <Route path="/shopping-cart" element={<ShoppingCart />} />
+          <Route path="/view-orders" element={<Orders />} />
+          <Route path="/qr-reader" element={<QrCodeReader />} />
+          <Route path="/" element={<Home />} />
         </Routes>
       </BrowserRouter>
     </div>

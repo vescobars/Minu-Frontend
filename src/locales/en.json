@@ -52,9 +52,11 @@
   "Review": "Let us know what you think",
   "Schedule": "Schedule",
   "CreateRestaurant": "Create a restaurant",
-  "QRMenuScanner" : "QR Menu Scanner",
-  "SelectRestaurant" : "Select restaurant",
+  "QRMenuScanner": "QR Menu Scanner",
+  "SelectRestaurant": "Select restaurant",
   "addChain": "New Chain",
   "addRestaurant": "New Restaurant",
-  "report": "Reports"
+  "report": "Reports",
+  "ReadMore": "Read More",
+  "TryNow": "Try now"
 }
