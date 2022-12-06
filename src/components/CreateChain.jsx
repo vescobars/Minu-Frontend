@@ -17,7 +17,7 @@ function CreateChain() {
       chainName: inputs.cname,
     }
 
-    fetch("/api/v1/chains", {
+    fetch("http://localhost:3000/api/v1/chains", {
       method: "POST",
       headers: {
         'Content-type': "application/json"
