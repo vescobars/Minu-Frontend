@@ -25,18 +25,18 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/products" element={<Products />} />
           <Route path="/create-promotion" element={<CreatePromotion />} />
-          <Route path="/" element={<Restaurants />} />
           <Route path="/create-restaurant" element={<CreateRestaurant />} />
           <Route path="/create-chain" element={<CreateChain />} />
           <Route path="/report" element={<Report />} />
-
-          <Route path="/addReviewRestaurant" element={<AddReviewRestaurant />} />
+          <Route
+            path="/addReviewRestaurant"
+            element={<AddReviewRestaurant />}
+          />
           <Route path="/addPlate" element={<AddPlate />} />
-
-          <Route path="/shopping-cart" element={<ShoppingCart/>}/>
-          <Route path="/view-orders" element={<Orders/>}/>
-          <Route path="/qr-reader" element={<QrCodeReader/>}/>
-
+          <Route path="/shopping-cart" element={<ShoppingCart />} />
+          <Route path="/view-orders" element={<Orders />} />
+          <Route path="/qr-reader" element={<QrCodeReader />} />
+          <Route path="/" element={<Restaurants />} />
         </Routes>
       </BrowserRouter>
     </div>

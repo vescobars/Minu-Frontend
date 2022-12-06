@@ -12,6 +12,20 @@ const Restaurants = () => {
 
   useEffect(() => {
     const URL = "https://localhost:3000/chains";
+    if (!navigator.onLine) {
+      if (localStorage.getItem("restaurants") === null) {
+        setRestaurants([]);
+      } else {
+        setRestaurants(localStorage.getItem("restaurants"));
+      }
+    } else {
+      fetch(URL)
+        .then((data) => data.json())
+        .then((data) => {
+          setRestaurants(data);
+          localStorage.setItem("restaurants", data);
+        });
+    }
     fetch(URL)
       .then((data) => data.json())
       .then((data) => {
