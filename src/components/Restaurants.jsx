@@ -26,11 +26,6 @@ const Restaurants = () => {
           localStorage.setItem("restaurants", data);
         });
     }
-    fetch(URL)
-      .then((data) => data.json())
-      .then((data) => {
-        setRestaurants(data);
-      });
   }, []);
 
   const handleChange = (e) => {

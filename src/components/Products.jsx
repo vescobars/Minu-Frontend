@@ -57,11 +57,6 @@ const Products = () => {
           localStorage.setItem("products", prodValues);
         });
     }
-    fetch(URL)
-      .then((data) => data.json())
-      .then((data) => {
-        setProducts(data);
-      });
   }, []);
 
   const handleChange = (e) => {
