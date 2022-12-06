@@ -11,7 +11,7 @@ const Restaurants = () => {
   const [restaurants, setRestaurants] = useState([]);
 
   useEffect(() => {
-    const URL = "https://localhost:3000/chains";
+    const URL = "http://localhost:3000/api/v1/chains";
     if (!navigator.onLine) {
       if (localStorage.getItem("restaurants") === null) {
         setRestaurants([]);
@@ -65,8 +65,8 @@ const Restaurants = () => {
         </h3>
         <div className="container w-100 mt-4">
           <div className="row">
-            {restaurants.map((res) => (
-              <div className="col col-sm-4">
+            {restaurants?.map((res) => (
+              <div key={res.id} className="col col-sm-4">
                 <RestaurantCard restaurant={res} />
               </div>
             ))}
